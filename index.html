@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+            background: linear-gradient(to right,white, violet);
+        }
+.main{
+
+    max-width: 800px;
+    margin: 30px auto;
+    border: 1px solid black ;
+    text-align: center;
+    border-radius: 6px;
+    background: white;
+    
+}
+.firstImg {
+    width: 600px;
+    
+}
+.selection{
+display: grid;
+grid-template-columns: 150px 150px 150px 150px;
+margin-left: 50px;
+grid-gap: 20px;
+}
+img{
+    border-radius: 10px;
+}
+img:hover{
+    transform: scale(1.5);
+}
+.intro{
+
+    padding-top: 20px;
+}
+.red{
+    background: linear-gradient(to right,white,red);
+}
+button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    background: violet;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+button:hover{
+    background: white;
+    color: violet   ;
+}
+a{
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+
+    color: violet;
+}
+    </style>
+</head>
+<body>
+    <button>Change Theme</button>
+    <div class="main">
+   <h1>
+
+    🏀Why Basketball
+   </h1> 
+   <h2>My favorite sport</h2>
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/034/original/jc-gellidon-XmYSlYrupL8-unsplash.jpg?1690203849" alt="basketballfield" class="firstImg" >
+<div class="selection">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/037/original/markus-spiske-oXS1f0uZYV4-unsplash.jpg?1690203880" alt="" width="150px" height="150px">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/036/original/stephen-baker-QAX5Ylx-lKo-unsplash.jpg?1690203870" alt="" width="150px" height="150px">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/035/original/tom-briskey-AddAnDkkovM-unsplash.jpg?1690203862" alt="" width="150px" height="150px">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/091/033/original/logan-weaver-lgnwvr-zPHJ_7seOfA-unsplash.jpg?1690203835" alt="" width="150px" height="150px">
+</div>
+<p class="intro">Basketball, game played between two teams of five players each on a rectangular court, usually indoors. Each team tries to score by tossing the ball through the opponent’s goal, an elevated horizontal hoop and net called a basket.The only major sport strictly of U.S. origin, basketball was invented by James Naismith (1861–1939) on or about December 1, 1891, at the International Young Men’s Christian Association (YMCA) Training School (now Springfield College), Springfield, Massachusetts, where Naismith was an instructor in physical education.</p>
+<p>
+    <a href="https://www.britannica.com/sports/basketball" target="_blank"> 📖Learn more!</a>
+</p>
+</div>
+
+<script>
+function changeColor(){
+
+    let body = document.querySelector("body")
+    body.classList.add("red")
+}
+
+let button = document.querySelector("body")
+button.addEventListener("click",changeColor)
+
+</script>
+</body>
+</html>
